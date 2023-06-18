@@ -40,9 +40,9 @@ export default function Tabela(props: TabelaProps) {
     function renderizarAcoes(cliente: Cliente) {
         return (
             <div className="flex justify-center">
-                {props.clienteSelecionado ? (
+                {/* props.clienteSelecionado ? (
                     <button onClick={() => props.clienteSelecionado?.(cliente)} className={`flex justify-center items-center text-green-600 rounded-full p-2 m-1 hover:bg-purple-50`}>{iconeEdicao}</button>
-                ) : false}
+                ) : false */}
                 {props.clienteExcluido ? (
                     <button onClick={() => props.clienteExcluido?.(cliente)} className={`flex justify-center items-center text-red-600 rounded-full p-2 m-1 hover:bg-purple-50`}>{iconeLixo}</button>
                 ) : false}

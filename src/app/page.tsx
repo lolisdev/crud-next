@@ -31,7 +31,7 @@ export default function Home() {
   }
 
   function clienteExcluido(cliente: Cliente) {
-    clientes = clientes.filter(clienteArr => clienteArr.nome !== cliente.nome)
+    setClientes(clientes = clientes.filter(clienteArr => clienteArr.nome !== cliente.nome))
     obterTodos()
   }
 
